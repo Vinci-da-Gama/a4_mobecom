@@ -1,0 +1,57 @@
+.grayscale-transition(@transTime) {
+    -webkit-transition: -webkit-filter @transTime ease-in-out;
+       -moz-transition: -webkit-filter @transTime ease-in-out;
+        -ms-transition: -webkit-filter @transTime ease-in-out;
+         -o-transition: -webkit-filter @transTime ease-in-out;
+            transition: -webkit-filter @transTime ease-in-out;
+    -webkit-transition: filter @transTime ease-in-out;
+       -moz-transition: filter @transTime ease-in-out;
+        -ms-transition: filter @transTime ease-in-out;
+         -o-transition: filter @transTime ease-in-out;
+            transition: filter @transTime ease-in-out;
+}
+
+div.the-slick-images {
+    img {
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+    }
+    .slick-dots li button {
+        margin-top: 10px;
+    }
+    .slick-dots li button:before {
+        font-size: 16px;
+        top: 10px;
+        // content: '\262F';
+        // color: green;
+    }
+
+    .slick-next:before, .slick-prev:before {
+        font-size: 40px;
+        // content: '\266B';
+        color: gray;
+    }
+    .slick-prev, .slick-next {
+        width: 36px;
+        height: 36px;
+        transform: translate(0,-51%);
+    }
+    .slick-prev {
+        left: -50px;
+    }
+    .slick-next {
+        right: -50px;
+    }
+}
+
+.grayscale-img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    .grayscale-transition(.3s);
+    &:hover {
+        -webkit-filter: none;
+        filter: none;
+        .grayscale-transition(.3s);
+    }
+}

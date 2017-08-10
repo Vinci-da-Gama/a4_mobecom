@@ -1,0 +1,47 @@
+@import url('./_padding_margint.less');
+@import url('./_clientsCarousel.less');
+
+@font-face {
+    font-family: 'OpenSans-Semibold';
+    // font-weight: bold;
+    font-style: normal;
+    src: url('./Fonts/OpenSans-Semibold.eot?#iefix') format('embedded-opentype'), 
+    	url('./Fonts/OpenSans-Semibold.woff') format('woff'), 
+    	url('./Fonts/OpenSans-Semibold.ttf') format('truetype'), 
+    	url('./Fonts/OpenSans-Semibold.svg#OpenSans-Semibold') format('svg');
+}
+
+body.torso-body {
+    margin: 0;
+    padding: 0;
+    // font-family: 'OpenSans-Semibold', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    h3,h4 {
+	    font-family: 'OpenSans-Semibold';
+    }
+}
+
+@import url('./_homeContent.less');
+
+
+section.footer-section {
+	background-color: rgba(68, 72, 74, .99);
+	input#input_inFooter {
+		height: 50px;
+		border-radius: 0;
+	}
+	div.leftright-div > div {
+		color: #889093;
+	}
+	p {
+		color: #889093;
+	}
+	div.text-contat-copyright {
+		line-height: 5.8em;
+		color: white;
+	}
+}
+
+
+@import url('./_mq.less');

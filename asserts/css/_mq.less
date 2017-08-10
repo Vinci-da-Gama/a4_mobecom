@@ -1,0 +1,167 @@
+
+/* clients carousel */
+@media screen and (max-width: 480px) {
+    div.the-slick-images .slick-dots li button {
+        margin-top: 5px;
+    }
+    div.the-slick-images .slick-dots li button:before {
+        top: 20px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    div#responsive-topbanner-text {
+	    top: 7%;
+	    left: 10%;
+	    > p:first-child {
+			font-size: 12px;
+	    }
+	    > p:nth-child(2) {
+	    	font-size: 1.1em;
+	    	margin-bottom: 5px;
+	    }
+	    > p:nth-child(3) {
+	    	// display: none;
+	    	span {
+		    	font-size: 12px;
+	    	}
+	    }
+	}
+}
+
+/* corporate governance first row */
+@media screen and (max-width: 768px) {
+    #brat > div {
+    	text-align: center;
+    }
+    #cdc > div {
+    	text-align: center;
+    }
+}
+
+/* top banner content */
+@media screen and (max-width: 870px) {
+    div#responsive-topbanner-text {
+		// position: absolute;
+	    width: 53%;
+	    height: 80%;
+	    top: 12%;
+	    left: 19%;
+	    > p:first-child {
+			font-size: 1em;
+	    }
+	    > p:nth-child(2) {
+	    	font-size: 3em;
+	    	margin-left: 0px;
+	    }
+	    > p:nth-child(3) {
+	    	margin: .8em auto;
+	    	> span {
+	    		font-size: 15px;
+	    	}
+	    }
+	}
+}
+
+/* product outline and Image */
+@media screen and (max-width: 991px) {
+    #bgimg-convert {
+		> div:not(:first-child) {
+			div.comment-outline {
+				background-size: 100% 100%;
+			}
+		}
+    }
+
+    #img-resizedable {
+		.width-resize {
+			width: 82%;
+		}
+    }
+}
+
+/* narbar collapse */
+@media (max-width: 1200px) {
+    div.font-sizeDesc {
+    	font-size: 14px;
+    }
+
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+/* how we do it three coolor blocks */
+@media screen and (max-width:1295px) {
+
+	div#three-Color_blocks {
+		div.skyblue-divblock {
+			padding: 2em;
+			> .thumbnail {
+				min-width: 222px;
+				margin: 0 auto;
+				div.caption p {
+					font-size: 14px;
+				}
+			}
+		}
+		div.darkred-divblock {
+			padding: 2em;
+			> .thumbnail {
+				min-width: 222px;
+				margin: 0 auto;
+				div.caption p {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
+/* how we do it three coolor blocks */
+@media screen and (min-device-width : 991px) and (max-device-width : 1295px) {
+	div#three-Color_blocks {
+		div.orange-divblock {
+			// padding-top: 1em;
+			padding: 2em;
+			margin-top: 0em;
+			min-height: 487px;
+			> .thumbnail {
+				min-width: 222px;
+				width: 100%;
+				margin: 0 auto;
+			}
+		}
+	}
+}
